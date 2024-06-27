@@ -205,14 +205,81 @@
 // console.log(kattaharf(str));
 
 // 20-masala
-const son = [12, 23, 45, 325, 8, 21, 67, 53, 4];
-function juftlarining_yigindisi(son) {
-  let res = [];
-  for (let i = 0; i < son.length; i++) {
-    if (son[i] % 2 !== 1) {
-      res.push(son[i]);
-    }
+// const son = [12, 23, 45, 325, 8, 21, 67, 53, 4];
+// function juftlarining_yigindisi(son) {
+//   let res = [];
+//   for (let i = 0; i < son.length; i++) {
+//     if (son[i] % 2 !== 1) {
+//       res.push(son[i]);
+//     }
+//   }
+//   return res;
+// }
+// console.log(juftlarining_yigindisi(son));
+
+// qoshimcha masalalar
+// 1-masala
+// a ga b ni qoshish kk
+
+// let a = +prompt("a sonni kiriting");
+// let b = +prompt("b sonni kiriting");
+// let d = a + b;
+// console.log(d);
+
+// 2-masala
+// taqqoslashga oid
+// let a = +prompt("a sonni kiriting");
+// let b = +prompt("b sonni kiriting");
+// let res;
+// if (a > b) {
+//   res = "a>";
+// } else if ((a = b)) {
+//   res = "=";
+// } else {
+//   res = "b>";
+// }
+// console.log(res);
+
+// 3-masala
+// let a = +prompt("a sonni kiriting");
+// let b = +prompt("b sonni kiriting");
+// let d = a + b;
+// console.log(c);
+// 4-masala
+
+// Tez orada RoboContest tizimining qanday ishlayotganligini tekshirish uchun
+//  RoboticsLab direktori ishxonamizga tashrif buyuradi.Biz direktorni tantanali kutib
+//   olish maqsadida direktorning moshinadan tushgan joyidan ishxonamiz eshigigacha bo'lgan
+//   oraliqga gilam to'shashga qaror qildik.Bizga ma'lumki direktorning mashinasi to'xtatiladigan
+//   joydan ishxonamiz kirish eshigigacha bo'lgan masofa
+// 𝑁
+// N metr, bozorda 1 metr gilamning narxi
+// 𝑃
+// P so'm. Biz gilam sotib olish uchun jami qancha mablag' sarflashimizni aniqlang!.
+
+// let n = +prompt("nsonni kiriting");
+// let m = +prompt("m narxni kiriting");
+// let result = 1;
+// if (1 <= n && m <= 10 ** 9) {
+//   result = n * m;
+// }
+// console.log(result + "  sizga kerak gilamning narxi");
+
+// 5-masala
+// z soninig boluvchilarini topish
+// let z = +prompt("z butun sonni kiriting");
+// for (let i = 0; i <= z; i++) {
+//   let res = [];
+//   if (z % i == 0) {
+//     res.push(i);
+//   }
+// }
+// console.log(res);
+let z = +prompt("z butun sonni kiriting");
+let res = [];
+for (let i = 1; i <= z; i++) {
+  if (z % i == 0) {
+    res.push(i) + res.push(-i);
   }
-  return res;
 }
-console.log(juftlarining_yigindisi(son));
+console.log(res);
