@@ -275,11 +275,90 @@
 //   }
 // }
 // console.log(res);
-let z = +prompt("z butun sonni kiriting");
+
+// 6-masala
+// kabisa yilga oid masala
+
+// let yil = +prompt("yilni kiriting");
+// let res;
+// if (yil % 400 == 0 || (yil % 4 == 0 && yil % 100 !== 0)) {
+//   res = "12/09/" + yil;
+// } else if (yil < 10) {
+//   res = "13/09/000" + yil;
+// } else {
+//   res = "13/09/" + yil;
+// }
+// console.log(res);
+
+// 7-masala
+// uzb bayrogi rangiga oid masala
+// let N = +prompt("oq, yashil, ko'k ranglar sonini kiriting");
+// let res;
+// let F = [0, 1];
+// for (let i = 2; i <= N; i++) {
+//   F[i] = F[i - 2] + F[i - 1];
+// }
+// res = F[N] * 2;
+// console.log(res);
+
+// 8-masala
+// eng maxbilan minimumini topish
+
+// let son = [1, 2, 3, 4, 5, 6];
+// let res = [];
+// let resul = [];
+// for (let i = son[0]; i < son.length; i++) {
+//   res += i;
+//   res++;
+//   resul = res - (son.length - 1);
+// }
+
+// console.log(resul) + console.log(res);
+
+// 9-masala
+// toplamdagi sherigi yoq sonni topish
+
+// const son = [1, 2, 6, 3, 4, 5, 3, 4, 1, 2, 5];
+// let res = son.filter(function (value, index, n) {
+//   return n.indexOf(value) === n.lastIndexOf(value);
+// });
+// console.log(res);
+
+// 10-masala
+// opa singillarining pullari sovgaga yetadimi
+// let n = +prompt("onaning sovg'si narxi");
+// let a = +prompt("kattaa qizning ortiqcha puli");
+// let b = +prompt("o'rtancha qizning ortiqcha puli");
+// let c = +prompt("kichik qizning ortiqcha puli");
+// let res;
+// if (n <= a + b + c) {
+//   res = "yes" + (a + b + c);
+// } else {
+//   res = a + b + c + "  pulingiz yetmaydi";
+// }
+// console.log(res);
+
+// 11-masala
+// massivning 2- eng katta elementini topish
+
+// let son = [12, 2, 4, 7, 5, 9, 1]
+// let res = [];
+// function engkatta(son) {
+//   res = son.sort(function (a,b)){
+//    return a-b
+//   }
+//   return res[1]
+// }
+
+// console.log(res)
+let son = [12, 2, 4, 7, 5, 9, 1];
 let res = [];
-for (let i = 1; i <= z; i++) {
-  if (z % i == 0) {
-    res.push(i) + res.push(-i);
-  }
+
+function engkatta(son) {
+  res = son.sort(function (a, b) {
+    return b - a;
+  });
+  return res[1];
 }
-console.log(res);
+
+console.log(engkatta(son));
